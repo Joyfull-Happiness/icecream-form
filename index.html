@@ -50,9 +50,9 @@
           />
         </div>
 
-        <div class="dropdown">
-          <label for="Dropdown">Choose a flavor</label>
-          <select id="Dropdown" name="Dropdown" required>
+        <div class="flavors">
+          <label for="flavors">Choose a flavor</label>
+          <select id="flavors" name="flavors" required>
             <option value="">--Please choose an option--</option>
             <option vlaue="chocolate">Chocolate</option>
             <option value="vanilla">Vanilla</option>
@@ -63,10 +63,10 @@
         <fieldset>
           <legend>Please choose one:</legend>
 
-          <input type="radio" id="cone" name="cone" required />
+          <input type="radio" id="cone" name="radio" required />
           <label for="cone">cone</label>
 
-          <input type="radio" id="cup" name="cup" required />
+          <input type="radio" id="cup" name="radio" required />
           <label for="cup">cup</label>
         </fieldset>
 
@@ -86,5 +86,6 @@
         <button type="submit">Place Order</button>
       </form>
     </div>
+    <script type="text/javascript" src="api.js"></script>
   </body>
 </html>

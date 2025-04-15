@@ -33,7 +33,7 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(135deg, var(--orange), var(--lightblue)));
+  background-color: var(--lightblue);
   padding: 2rem;
   border-radius: 5px;
 }
