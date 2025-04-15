@@ -7,11 +7,10 @@ html {
   box-sizing: inherit;
 }
 :root {
-  --lightblue: ##d7f2f6;
   --orange: #e2a34f;
   --black: #333333;
   --white: #ffffff;
-  --teal: #0d818e;
+  --teal: #88dae3;
   --darkteal: #3e6e6b;
   --green: #d5fcda;
   --pink: #ffd2df;
@@ -20,9 +19,9 @@ html {
 
 body {
   font-family: sans-serif;
-  background: linear-gradient(135deg, var(--lightblue), var(--orange));
   color: var(--black);
   height: 100vh;
+  background-color: var(--green);
 }
 
 h1 {
@@ -33,7 +32,7 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
-  background-color: var(--lightblue);
+  background-color: var(--pink);
   padding: 2rem;
   border-radius: 5px;
 }
