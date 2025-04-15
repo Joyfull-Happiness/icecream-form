@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  --lightblue: ##d7f2f6;
+  --orange: #e2a34f;
+  --black: #333333;
+  --white: #ffffff;
+  --teal: #0d818e;
+  --darkteal: #3e6e6b;
+  --green: #d5fcda;
+  --pink: #ffd2df;
+  --yellow: #fef2d8;
+}
+
+body {
+  font-family: sans-serif;
+  background: linear-gradient(135deg, var(--lightblue), var(--orange));
+  color: var(--black);
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: var(--black);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, var(--orange), var(--lightblue)));
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+label {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 0.5rem;
+  border: 1px solid var(--orange);
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  background-color: var(--teal);
+  color: var(--white);
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--orange);
+}

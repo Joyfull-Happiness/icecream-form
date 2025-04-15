@@ -8,6 +8,9 @@
   </head>
   <body>
     <div class="container">
+      <div class="header">
+        <h1>Fill out the form to place your ice cream order</h1>
+      </div>
       <form>
         <div class="name">
           <label for="name">Name:</label>
@@ -51,36 +54,36 @@
           <label for="Dropdown">Choose a flavor</label>
           <select id="Dropdown" name="Dropdown" required>
             <option value="">--Please choose an option--</option>
-            <option vlaue="optionone">Chocolate</option>
-            <option value="optiontwo">Vanilla</option>
-            <option value="optionthree">Strawberry</option>
+            <option vlaue="chocolate">Chocolate</option>
+            <option value="vanilla">Vanilla</option>
+            <option value="strawberry">Strawberry</option>
           </select>
         </div>
 
         <fieldset>
-          <legend>Would you like to click a button? Click below!</legend>
+          <legend>Please choose one:</legend>
 
-          <input type="radio" id="clickme" name="clickme" required />
-          <label for="clickme">click me</label>
+          <input type="radio" id="cone" name="cone" required />
+          <label for="cone">cone</label>
 
-          <input type="radio" id="noclickme" name="clickme" required />
-          <label for="noclickme">no click me!</label>
+          <input type="radio" id="cup" name="cup" required />
+          <label for="cup">cup</label>
         </fieldset>
 
         <fieldset>
-          <legend>Would you like to check a box?</legend>
+          <legend>What toppings would you like?</legend>
 
-          <input type="checkbox" id="checkboxone" name="checkboxone" checked />
-          <label for="checkboxone">Yes</label>
+          <input type="checkbox" id="sprinkles" name="sprinkles" checked />
+          <label for="sprinkles">Sprinkles</label>
 
-          <input type="checkbox" id="checkboxtwo" name="checkboxtwo" />
-          <label for="checkboxtwo">No</label>
+          <input type="checkbox" id="fruit" name="fruit" />
+          <label for="fruit">Fruit</label>
 
-          <input type="checkbox" id="checkboxthree" name="checkboxthree" />
-          <label for="checkboxthree">Maybe?</label>
+          <input type="checkbox" id="chocolateSauce" name="chocolateSauce" />
+          <label for="chocolateSauce">Chocolate</label>
         </fieldset>
 
-        <button type="submit">Submit</button>
+        <button type="submit">Place Order</button>
       </form>
     </div>
   </body>
