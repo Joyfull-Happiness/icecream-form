@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="name">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Asia"
+            required
+          />
+        </div>
+
+        <div class="email">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="user_email"
+            placeholder="Asia@gmail.com"
+            required
+          />
+        </div>
+
+        <div class="phone">
+          <label for="phone"
+            >Phone Number:
+            <small>(Format: 123-456-7890)</small>
+          </label>
+          <input
+            type="phone"
+            id="phone"
+            name-="phone"
+            pattern="[0-9{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="123-456-789"
+            required
+            maxlength="13"
+          />
+        </div>
+
+        <div class="dropdown">
+          <label for="Dropdown">Choose a flavor</label>
+          <select id="Dropdown" name="Dropdown" required>
+            <option value="">--Please choose an option--</option>
+            <option vlaue="optionone">Chocolate</option>
+            <option value="optiontwo">Vanilla</option>
+            <option value="optionthree">Strawberry</option>
+          </select>
+        </div>
+
+        <fieldset>
+          <legend>Would you like to click a button? Click below!</legend>
+
+          <input type="radio" id="clickme" name="clickme" required />
+          <label for="clickme">click me</label>
+
+          <input type="radio" id="noclickme" name="clickme" required />
+          <label for="noclickme">no click me!</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Would you like to check a box?</legend>
+
+          <input type="checkbox" id="checkboxone" name="checkboxone" checked />
+          <label for="checkboxone">Yes</label>
+
+          <input type="checkbox" id="checkboxtwo" name="checkboxtwo" />
+          <label for="checkboxtwo">No</label>
+
+          <input type="checkbox" id="checkboxthree" name="checkboxthree" />
+          <label for="checkboxthree">Maybe?</label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
