@@ -36,18 +36,14 @@
         </div>
 
         <div class="phone">
-          <label for="phone"
-            >Phone Number:
-            <small>(Format: 123-456-7890)</small>
-          </label>
+          <label for="phone">Phone Number: </label>
           <input
-            type="phone"
+            type="tel"
             id="phone"
             name-="phone"
-            pattern="[0-9{3}-[0-9]{3}-[0-9]{4}"
-            placeholder="123-456-789"
+            placeholder="123-456-7889"
             required
-            maxlength="13"
+            maxlength="12"
           />
         </div>
 
@@ -64,23 +60,34 @@
         <fieldset>
           <legend>Please choose one:</legend>
 
-          <input type="radio" id="cone" name="radio" required />
+          <input value="cone" type="radio" id="cone" name="radio" required />
           <label for="cone">cone</label>
 
-          <input type="radio" id="cup" name="radio" required />
+          <input value="cup" type="radio" id="cup" name="radio" required />
           <label for="cup">cup</label>
         </fieldset>
 
         <fieldset>
           <legend>What toppings would you like?</legend>
 
-          <input type="checkbox" id="sprinkles" name="sprinkles" checked />
+          <input
+            value="sprinkles"
+            type="checkbox"
+            id="sprinkles"
+            name="checkbox"
+            checked
+          />
           <label for="sprinkles">Sprinkles</label>
 
-          <input type="checkbox" id="fruit" name="fruit" />
+          <input value="fruit" type="checkbox" id="fruit" name="fruit" />
           <label for="fruit">Fruit</label>
 
-          <input type="checkbox" id="chocolateSauce" name="chocolateSauce" />
+          <input
+            value="chocolateSauce"
+            type="checkbox"
+            id="chocolateSauce"
+            name="chocolateSauce"
+          />
           <label for="chocolateSauce">Chocolate</label>
         </fieldset>
 

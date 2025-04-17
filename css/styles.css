@@ -46,7 +46,7 @@ label {
 input,
 select {
   padding: 0.5rem;
-  border: 1px solid var(--orange);
+  border: 1px solid var(--darkteal);
   border-radius: 5px;
   font-size: 1.2rem;
 }
