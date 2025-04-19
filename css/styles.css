@@ -32,16 +32,18 @@ h1 {
   display: inline-block;
   padding: 2rem;
   border-radius: 5px;
-  border: solid 0.5rem var(--black);
+  border: solid 0.25rem var(--black);
 }
 
 form {
+  /* align-items: center; */
   display: flex;
   flex-direction: column;
   background-color: var(--pink);
   padding: 2rem;
   border-radius: 5px;
-  border: solid 0.5rem var(--black);
+  border: solid 0.25rem var(--black);
+  text-transform: Uppercase;
 }
 
 label {
@@ -51,24 +53,34 @@ label {
 }
 
 input,
-select {
+select,
+fieldset {
   padding: 0.5rem;
-  border: 1px solid var(--darkteal);
-  border-radius: 5px;
   font-size: 1.2rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  border: solid 0.25rem var(--black);
+}
+fieldset {
+  background-color: var(--white);
 }
 
+legend {
+  text-decoration: solid;
+}
 button {
   margin-top: 1.5rem;
   padding: 0.5rem;
   background-color: var(--teal);
-  color: var(--white);
+  color: var(--black);
   font-size: 1.2rem;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border-radius: 5px;
+  border: solid 0.25rem var(--black);
 }
 
 button:hover {
-  background-color: var(--orange);
+  background-color: var(--darkteal);
 }
