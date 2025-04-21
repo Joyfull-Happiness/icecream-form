@@ -12,7 +12,7 @@ function onFormSubmit() {
 
   form.style.display = "none";
 
-  message.style.display = "none";
+  // message.style.display = "none";
   // create a new element <p></p>
   // add a message
   // add a message within the paragraph
