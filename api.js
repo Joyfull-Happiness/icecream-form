@@ -2,6 +2,9 @@ let form = document.querySelector("form");
 form.addEventListener("submit", onFormSubmit);
 console.log("form:", form);
 
+let thankYou = document.querySelector("thankYou");
+console.log("thankYou:", thankYou);
+
 function onFormSubmit() {
   event.preventDefault();
   const data = new FormData(event.target);
@@ -11,12 +14,13 @@ function onFormSubmit() {
   form.reset();
 
   form.style.display = "none";
+  thankYou.style.display = "block";
 
   let name = dataObject.name;
 
-  let message = `Thank you ${name} for your order!`;
-  console.log("first message to user:", message);
-  // message.style.display = "none";
+  thankYou = `Thank you ${name} for your order!`;
+  console.log("first message to user:", thankYou);
+
   // create a new element <p></p>
   // add a message
   // add a message within the paragraph

@@ -89,3 +89,16 @@ button {
 button:hover {
   background-color: var(--darkteal);
 }
+
+.thankYou {
+  text-align: center;
+  color: var(--black);
+  background-color: var(--teal);
+  display: inline-block;
+  padding: 2rem;
+  border-radius: 5px;
+  border: solid 0.25rem var(--black);
+}
+.hidden {
+  display: none;
+}
